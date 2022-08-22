@@ -15,7 +15,7 @@ void main() async {
   runApp(
     GetMaterialApp(
       home: const MyApp(),
-      title: "Match Menia",
+      title: "Somnath Book",
       theme: ThemeData(
         appBarTheme: const AppBarTheme(
           color: Colors.transparent,
