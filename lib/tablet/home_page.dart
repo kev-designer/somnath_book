@@ -206,7 +206,7 @@ class TabletHomePage extends StatelessWidget {
                           SizedBox(
                             height: 250,
                             width: 250,
-                            child: Image.asset("assets/images/logo1.png"),
+                            child: Image.asset("assets/imgs/web/logo1.png"),
                           ),
                         ],
                       ),
