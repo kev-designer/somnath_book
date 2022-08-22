@@ -95,11 +95,11 @@ class MobileHomePage extends StatelessWidget {
                                   ).text.semiBold.make(),
                                 ),
                               ),
-                              20.heightBox,
+                              40.heightBox,
                               Center(
                                 child: Image.asset(
                                   "assets/imgs/web/image.png",
-                                  height: height(context) * .38,
+                                  height: height(context) * .44,
                                 ),
                               ),
                             ],
