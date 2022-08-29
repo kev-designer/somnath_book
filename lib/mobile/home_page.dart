@@ -51,7 +51,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                                 "BEST SAFE \nBOOK EVER",
                                 style: GoogleFonts.lato(
                                   fontSize: height(context) * .04,
-                                  letterSpacing: 2,
+                                  letterSpacing: 1,
                                   color: Colors.white,
                                   height: 1.3,
                                 ),
@@ -60,7 +60,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                               Text(
                                 "For any Queries or New ID  Whats App us",
                                 style: GoogleFonts.lato(
-                                  fontSize: height(context) * .02,
+                                  fontSize: height(context) * .024,
                                   color: Colors.white,
                                 ),
                               ).text.medium.make(),
@@ -80,7 +80,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                                   child: Text(
                                     "9081924365",
                                     style: GoogleFonts.nunito(
-                                      letterSpacing: 2,
+                                      letterSpacing: 1,
                                       fontSize: height(context) * .024,
                                       color: Colors.white,
                                     ),
@@ -103,7 +103,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                                   child: Text(
                                     "9714824365",
                                     style: GoogleFonts.nunito(
-                                      letterSpacing: 2,
+                                      letterSpacing: 1,
                                       fontSize: height(context) * .024,
                                       color: Colors.white,
                                     ),
@@ -168,7 +168,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                         Text(
                           "We offer a range of premium, end-to-end, authentic experiences and curate the most fulfilling sports travel packages for the most sought-after sports events and teams.",
                           style: GoogleFonts.lato(
-                            fontSize: height(context) * .024,
+                            fontSize: height(context) * .026,
                             height: 1.6,
                             color: Colors.white,
                           ),
@@ -192,8 +192,8 @@ class _MobileHomePageState extends State<MobileHomePage> {
                             child: Text(
                               "9714124365",
                               style: GoogleFonts.nunito(
-                                letterSpacing: 2,
-                                fontSize: height(context) * .022,
+                                letterSpacing: 1,
+                                fontSize: height(context) * .024,
                                 color: const Color(0xff207DFE),
                               ),
                             ).text.semiBold.make(),
@@ -293,8 +293,8 @@ class _MobileHomePageState extends State<MobileHomePage> {
                           child: Text(
                             "9714824365",
                             style: GoogleFonts.nunito(
-                              letterSpacing: 2,
-                              fontSize: height(context) * .022,
+                              letterSpacing: 1,
+                              fontSize: height(context) * .024,
                               color: Colors.white,
                             ),
                           ).text.semiBold.make(),

@@ -54,7 +54,7 @@ class _WebHomePageState extends State<WebHomePage> {
                                   "BEST SAFE \nBOOK EVER",
                                   style: GoogleFonts.lato(
                                     fontSize: height(context) * .06,
-                                    letterSpacing: 2,
+                                    letterSpacing: 1,
                                     color: Colors.white,
                                     height: 1.3,
                                   ),
@@ -86,7 +86,7 @@ class _WebHomePageState extends State<WebHomePage> {
                                         child: Text(
                                           "9081924365",
                                           style: GoogleFonts.nunito(
-                                            letterSpacing: 2,
+                                            letterSpacing: 1,
                                             fontSize: height(context) * .02,
                                             color: Colors.white,
                                           ),
@@ -110,7 +110,7 @@ class _WebHomePageState extends State<WebHomePage> {
                                         child: Text(
                                           "9714824365",
                                           style: GoogleFonts.nunito(
-                                            letterSpacing: 2,
+                                            letterSpacing: 1,
                                             fontSize: height(context) * .02,
                                             color: Colors.white,
                                           ),
@@ -203,7 +203,7 @@ class _WebHomePageState extends State<WebHomePage> {
                               child: Text(
                                 "9714124365",
                                 style: GoogleFonts.nunito(
-                                  letterSpacing: 2,
+                                  letterSpacing: 1,
                                   fontSize: height(context) * .02,
                                   color: const Color(0xff207DFE),
                                 ),
@@ -302,7 +302,7 @@ class _WebHomePageState extends State<WebHomePage> {
                         child: Text(
                           "9714824365",
                           style: GoogleFonts.nunito(
-                            letterSpacing: 2,
+                            letterSpacing: 1,
                             fontSize: height(context) * .02,
                             color: Colors.white,
                           ),
