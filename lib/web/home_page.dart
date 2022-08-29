@@ -335,7 +335,9 @@ class _WebHomePageState extends State<WebHomePage> {
                   //IMAGES
                   HStack([
                     InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        return _launchWP2URL();
+                      },
                       child: Container(
                         height: 50,
                         width: 50,

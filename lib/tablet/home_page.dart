@@ -325,7 +325,9 @@ class _TabletHomePageState extends State<TabletHomePage> {
                   //IMAGES
                   HStack([
                     InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        return _launchWP2URL();
+                      },
                       child: Container(
                         height: 80,
                         width: 80,
