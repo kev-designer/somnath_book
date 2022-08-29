@@ -1,11 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ipo_web/widget/const.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:velocity_x/velocity_x.dart';
 
-class TabletHomePage extends StatelessWidget {
+class TabletHomePage extends StatefulWidget {
   const TabletHomePage({Key? key}) : super(key: key);
 
+  @override
+  State<TabletHomePage> createState() => _TabletHomePageState();
+}
+
+class _TabletHomePageState extends State<TabletHomePage> {
+  final _instaUrl = 'https://www.instagram.com/somnath_online_book/';
+  final _fbUrl = 'https://www.facebook.com/profile.php?id=100085255865613';
+  final _whatsappUrl1 = 'https://wa.me/+919714124365/';
+  final _whatsappUrl2 = 'https://wa.me/+919714824365/';
+  final _whatsappUrl3 = 'https://wa.me/+919081924365/';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,7 +47,7 @@ class TabletHomePage extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                "MOST TRUSTED \nBOOK EVER",
+                                "BEST SAFE \nBOOK EVER",
                                 style: GoogleFonts.lato(
                                   fontSize: height(context) * .05,
                                   letterSpacing: 2,
@@ -46,7 +57,7 @@ class TabletHomePage extends StatelessWidget {
                               ).text.bold.make(),
                               20.heightBox,
                               Text(
-                                "For any Queries or New ID  WhatsApp us",
+                                "For any Queries or New ID  Whats App us",
                                 style: GoogleFonts.lato(
                                   fontSize: height(context) * .028,
                                   color: Colors.white,
@@ -149,7 +160,7 @@ class TabletHomePage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          "Get in touch with MAHADEV BOOK CUSTOMER CARE for any Queries, Emergencies, Feedbacks or Complaints. We are here to help you 24/7 with our online services.",
+                          "We offer a range of premium, end-to-end, authentic experiences and curate the most fulfilling sports travel packages for the most sought-after sports events and teams.",
                           style: GoogleFonts.lato(
                             fontSize: height(context) * .028,
                             height: 1.6,
@@ -246,7 +257,7 @@ class TabletHomePage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(left: 90, right: 90),
                       child: Text(
-                        "Get in touch with MAHADEV BOOK CUSTOMER CARE for New ID and WhatsApp us or give a call.",
+                        "Get in touch with Somnath Book Online Customer Care for New ID and Whats App us or give a Call.",
                         textAlign: TextAlign.center,
                         style: GoogleFonts.lato(
                           fontSize: height(context) * .028,
@@ -322,7 +333,9 @@ class TabletHomePage extends StatelessWidget {
                     ),
                     80.widthBox,
                     InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        return _launchInstaURL();
+                      },
                       child: Container(
                         height: 80,
                         width: 80,
@@ -338,7 +351,9 @@ class TabletHomePage extends StatelessWidget {
                     ),
                     80.widthBox,
                     InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        return _launchFBURL();
+                      },
                       child: Container(
                         height: 80,
                         width: 80,
@@ -362,4 +377,12 @@ class TabletHomePage extends StatelessWidget {
       ),
     );
   }
+
+  void _launchInstaURL() async => await canLaunch(_instaUrl)
+      ? await launch(_instaUrl)
+      : throw 'Could not launch $_instaUrl';
+
+  void _launchFBURL() async => await canLaunch(_fbUrl)
+      ? await launch(_fbUrl)
+      : throw 'Could not launch $_fbUrl';
 }
