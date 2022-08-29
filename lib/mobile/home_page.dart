@@ -81,7 +81,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                                     "9081924365",
                                     style: GoogleFonts.nunito(
                                       letterSpacing: 1,
-                                      fontSize: height(context) * .024,
+                                      fontSize: height(context) * .026,
                                       color: Colors.white,
                                     ),
                                   ).text.semiBold.make(),
@@ -104,7 +104,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                                     "9714824365",
                                     style: GoogleFonts.nunito(
                                       letterSpacing: 1,
-                                      fontSize: height(context) * .024,
+                                      fontSize: height(context) * .026,
                                       color: Colors.white,
                                     ),
                                   ).text.semiBold.make(),
@@ -193,7 +193,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                               "9714124365",
                               style: GoogleFonts.nunito(
                                 letterSpacing: 1,
-                                fontSize: height(context) * .024,
+                                fontSize: height(context) * .026,
                                 color: const Color(0xff207DFE),
                               ),
                             ).text.semiBold.make(),
@@ -294,7 +294,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                             "9714824365",
                             style: GoogleFonts.nunito(
                               letterSpacing: 1,
-                              fontSize: height(context) * .024,
+                              fontSize: height(context) * .026,
                               color: Colors.white,
                             ),
                           ).text.semiBold.make(),
