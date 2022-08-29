@@ -66,7 +66,9 @@ class _MobileHomePageState extends State<MobileHomePage> {
                               ).text.medium.make(),
                               40.heightBox,
                               InkWell(
-                                onTap: () {},
+                                onTap: () {
+                                  return _launchWP3URL();
+                                },
                                 child: Container(
                                   alignment: Alignment.center,
                                   height: height(context) * .07,
@@ -87,7 +89,9 @@ class _MobileHomePageState extends State<MobileHomePage> {
                               ),
                               40.heightBox,
                               InkWell(
-                                onTap: () {},
+                                onTap: () {
+                                  return _launchWP2URL();
+                                },
                                 child: Container(
                                   alignment: Alignment.center,
                                   height: height(context) * .07,
@@ -171,7 +175,9 @@ class _MobileHomePageState extends State<MobileHomePage> {
                         ),
                         40.heightBox,
                         InkWell(
-                          onTap: () {},
+                          onTap: () {
+                            return _launchWP1URL();
+                          },
                           child: Container(
                             alignment: Alignment.center,
                             height: height(context) * .07,
@@ -272,7 +278,9 @@ class _MobileHomePageState extends State<MobileHomePage> {
                     Padding(
                       padding: const EdgeInsets.only(left: 20, right: 20),
                       child: InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          return _launchWP2URL();
+                        },
                         child: Container(
                           alignment: Alignment.center,
                           height: height(context) * .07,
@@ -387,4 +395,16 @@ class _MobileHomePageState extends State<MobileHomePage> {
   void _launchFBURL() async => await canLaunch(_fbUrl)
       ? await launch(_fbUrl)
       : throw 'Could not launch $_fbUrl';
+
+  void _launchWP1URL() async => await canLaunch(_whatsappUrl1)
+      ? await launch(_whatsappUrl1)
+      : throw 'Could not launch $_whatsappUrl1';
+
+  void _launchWP2URL() async => await canLaunch(_whatsappUrl2)
+      ? await launch(_whatsappUrl2)
+      : throw 'Could not launch $_whatsappUrl2';
+
+  void _launchWP3URL() async => await canLaunch(_whatsappUrl3)
+      ? await launch(_whatsappUrl3)
+      : throw 'Could not launch $_whatsappUrl3';
 }
