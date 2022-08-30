@@ -14,9 +14,9 @@ class TabletHomePage extends StatefulWidget {
 class _TabletHomePageState extends State<TabletHomePage> {
   final _instaUrl = 'https://www.instagram.com/somnath_online_book/';
   final _fbUrl = 'https://www.facebook.com/profile.php?id=100085255865613';
-  final _whatsappUrl1 = 'https://wa.me/+919714124365/';
-  final _whatsappUrl2 = 'https://wa.me/+919714824365/';
-  final _whatsappUrl3 = 'https://wa.me/+919081924365/';
+  final _whatsappUrl1 = 'https://wa.me/+919099682000/';
+  final _whatsappUrl2 = 'https://wa.me/+919099682000/';
+  final _whatsappUrl3 = 'https://wa.me/+919099683000/';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -77,7 +77,7 @@ class _TabletHomePageState extends State<TabletHomePage> {
                                     borderRadius: BorderRadius.circular(8),
                                   ),
                                   child: Text(
-                                    "9081924365",
+                                    "9099683000",
                                     style: GoogleFonts.nunito(
                                       letterSpacing: 1,
                                       fontSize: height(context) * .028,
@@ -188,7 +188,7 @@ class _TabletHomePageState extends State<TabletHomePage> {
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: Text(
-                              "9714124365",
+                              "9099682000",
                               style: GoogleFonts.nunito(
                                 letterSpacing: 1,
                                 fontSize: height(context) * .028,
