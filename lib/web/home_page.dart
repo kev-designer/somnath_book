@@ -15,9 +15,10 @@ class WebHomePage extends StatefulWidget {
 class _WebHomePageState extends State<WebHomePage> {
   final _instaUrl = 'https://www.instagram.com/somnath_online_book/';
   final _fbUrl = 'https://www.facebook.com/profile.php?id=100085255865613';
-  final _whatsappUrl1 = 'https://wa.me/+919099682000/';
-  final _whatsappUrl2 = 'https://wa.me/+919099682000/';
-  final _whatsappUrl3 = 'https://wa.me/+919099683000/';
+  final _whatsappUrl1 = 'https://wa.me/+919714124365/';
+  final _whatsappUrl2 = 'https://wa.me/+919714824365/';
+  final _whatsappUrl3 = 'https://wa.me/+919081924365/';
+  final _whatsappUrl4 = 'https://wa.me/+919129159191/';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -72,7 +73,7 @@ class _WebHomePageState extends State<WebHomePage> {
                                   children: [
                                     InkWell(
                                       onTap: () {
-                                        return _launchWP3URL();
+                                        return _launchWP1URL();
                                       },
                                       child: Container(
                                         alignment: Alignment.center,
@@ -84,7 +85,7 @@ class _WebHomePageState extends State<WebHomePage> {
                                               BorderRadius.circular(8),
                                         ),
                                         child: Text(
-                                          "9099683000",
+                                          "9714124365",
                                           style: GoogleFonts.nunito(
                                             letterSpacing: 1,
                                             fontSize: height(context) * .02,
@@ -187,7 +188,7 @@ class _WebHomePageState extends State<WebHomePage> {
                           40.heightBox,
                           InkWell(
                             onTap: () {
-                              return _launchWP1URL();
+                              return _launchWP3URL();
                             },
                             child: Container(
                               alignment: Alignment.center,
@@ -201,7 +202,7 @@ class _WebHomePageState extends State<WebHomePage> {
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child: Text(
-                                "9099682000",
+                                "9081924365",
                                 style: GoogleFonts.nunito(
                                   letterSpacing: 1,
                                   fontSize: height(context) * .02,
@@ -277,7 +278,7 @@ class _WebHomePageState extends State<WebHomePage> {
                     ),
                     24.heightBox,
                     Text(
-                      "Get in touch with Somnath Book Online Customer Care for \nNew ID and Whats App us or give a Call.",
+                      "Get in touch with Somnath Book Online Head Office Number for \nNew ID and Whats App us or give a Call.",
                       textAlign: TextAlign.center,
                       style: GoogleFonts.lato(
                         fontSize: height(context) * .024,
@@ -288,7 +289,7 @@ class _WebHomePageState extends State<WebHomePage> {
                     40.heightBox,
                     InkWell(
                       onTap: () {
-                        return _launchWP2URL();
+                        return _launchWP4URL();
                       },
                       child: Container(
                         alignment: Alignment.center,
@@ -300,7 +301,7 @@ class _WebHomePageState extends State<WebHomePage> {
                           borderRadius: BorderRadius.circular(8),
                         ),
                         child: Text(
-                          "9714824365",
+                          "9129159191",
                           style: GoogleFonts.nunito(
                             letterSpacing: 1,
                             fontSize: height(context) * .02,
@@ -417,4 +418,8 @@ class _WebHomePageState extends State<WebHomePage> {
   void _launchWP3URL() async => await canLaunch(_whatsappUrl3)
       ? await launch(_whatsappUrl3)
       : throw 'Could not launch $_whatsappUrl3';
+
+  void _launchWP4URL() async => await canLaunch(_whatsappUrl4)
+      ? await launch(_whatsappUrl4)
+      : throw 'Could not launch $_whatsappUrl4';
 }

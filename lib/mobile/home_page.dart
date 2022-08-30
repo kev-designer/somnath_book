@@ -14,9 +14,10 @@ class MobileHomePage extends StatefulWidget {
 class _MobileHomePageState extends State<MobileHomePage> {
   final _instaUrl = 'https://www.instagram.com/somnath_online_book/';
   final _fbUrl = 'https://www.facebook.com/profile.php?id=100085255865613';
-  final _whatsappUrl1 = 'https://wa.me/+919099682000/';
-  final _whatsappUrl2 = 'https://wa.me/+919099682000/';
-  final _whatsappUrl3 = 'https://wa.me/+919099683000/';
+  final _whatsappUrl1 = 'https://wa.me/+919714124365/';
+  final _whatsappUrl2 = 'https://wa.me/+919714824365/';
+  final _whatsappUrl3 = 'https://wa.me/+919081924365/';
+  final _whatsappUrl4 = 'https://wa.me/+919129159191/';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -78,7 +79,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                                     borderRadius: BorderRadius.circular(8),
                                   ),
                                   child: Text(
-                                    "9099683000",
+                                    "9714124365",
                                     style: GoogleFonts.nunito(
                                       letterSpacing: 1,
                                       fontSize: height(context) * .026,
@@ -176,7 +177,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                         40.heightBox,
                         InkWell(
                           onTap: () {
-                            return _launchWP1URL();
+                            return _launchWP4URL();
                           },
                           child: Container(
                             alignment: Alignment.center,
@@ -190,7 +191,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: Text(
-                              "9099682000",
+                              "9129159191",
                               style: GoogleFonts.nunito(
                                 letterSpacing: 1,
                                 fontSize: height(context) * .026,
@@ -265,7 +266,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                     Padding(
                       padding: const EdgeInsets.only(left: 30, right: 30),
                       child: Text(
-                        "Get in touch with Somnath Book Online Customer Care for New ID and Whats App us or give a Call.",
+                        "Get in touch with Somnath Book Online Head Office Number for New ID and Whats App us or give a Call.",
                         textAlign: TextAlign.center,
                         style: GoogleFonts.lato(
                           fontSize: height(context) * .024,
@@ -409,4 +410,8 @@ class _MobileHomePageState extends State<MobileHomePage> {
   void _launchWP3URL() async => await canLaunch(_whatsappUrl3)
       ? await launch(_whatsappUrl3)
       : throw 'Could not launch $_whatsappUrl3';
+
+  void _launchWP4URL() async => await canLaunch(_whatsappUrl4)
+      ? await launch(_whatsappUrl4)
+      : throw 'Could not launch $_whatsappUrl4';
 }
