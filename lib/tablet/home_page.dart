@@ -67,7 +67,7 @@ class _TabletHomePageState extends State<TabletHomePage> {
                               50.heightBox,
                               InkWell(
                                 onTap: () {
-                                  return _launchWP3URL();
+                                  return _launchWP1URL();
                                 },
                                 child: Container(
                                   alignment: Alignment.center,
@@ -175,7 +175,7 @@ class _TabletHomePageState extends State<TabletHomePage> {
                         40.heightBox,
                         InkWell(
                           onTap: () {
-                            return _launchWP1URL();
+                            return _launchWP3URL();
                           },
                           child: Container(
                             alignment: Alignment.center,
@@ -189,7 +189,7 @@ class _TabletHomePageState extends State<TabletHomePage> {
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: Text(
-                              "9129159191",
+                              "9081924365",
                               style: GoogleFonts.nunito(
                                 letterSpacing: 1,
                                 fontSize: height(context) * .028,
@@ -278,7 +278,7 @@ class _TabletHomePageState extends State<TabletHomePage> {
                       padding: const EdgeInsets.only(left: 100, right: 100),
                       child: InkWell(
                         onTap: () {
-                          return _launchWP2URL();
+                          return _launchWP4URL();
                         },
                         child: Container(
                           alignment: Alignment.center,
@@ -290,7 +290,7 @@ class _TabletHomePageState extends State<TabletHomePage> {
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: Text(
-                            "9714824365",
+                            "9129159191",
                             style: GoogleFonts.nunito(
                               letterSpacing: 1,
                               fontSize: height(context) * .028,
