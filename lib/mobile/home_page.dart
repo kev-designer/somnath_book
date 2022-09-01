@@ -114,7 +114,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                               40.heightBox,
                               Center(
                                 child: Image.asset(
-                                  "assets/imgs/web/image.png",
+                                  "assets/imgs/web/new.png",
                                   height: height(context) * .44,
                                 ),
                               ),

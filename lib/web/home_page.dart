@@ -126,7 +126,7 @@ class _WebHomePageState extends State<WebHomePage> {
                         ),
                         Expanded(
                           child: Image.asset(
-                            "assets/imgs/web/image.png",
+                            "assets/imgs/web/new.png",
                             height: height(context) * .5,
                           ),
                         ),

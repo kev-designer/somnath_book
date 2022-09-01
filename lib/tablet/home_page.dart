@@ -113,7 +113,7 @@ class _TabletHomePageState extends State<TabletHomePage> {
                               20.heightBox,
                               Center(
                                 child: Image.asset(
-                                  "assets/imgs/web/image.png",
+                                  "assets/imgs/web/new.png",
                                   height: height(context) * .38,
                                 ),
                               ),
