@@ -41,7 +41,7 @@ class _TabletHomePageState extends State<TabletHomePage> {
                       child: Container(
                         height: height(context) * .9999,
                         width: double.infinity,
-                        color: Colors.black.withOpacity(.65),
+                        color: Colors.black.withOpacity(.1),
                         child: Padding(
                           padding: const EdgeInsets.only(
                               left: 100, right: 100, top: 30),

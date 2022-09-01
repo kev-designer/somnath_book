@@ -41,7 +41,7 @@ class _WebHomePageState extends State<WebHomePage> {
                   child: Container(
                     height: 600,
                     width: double.infinity,
-                    color: Colors.black.withOpacity(.65),
+                    color: Colors.black.withOpacity(.1),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [

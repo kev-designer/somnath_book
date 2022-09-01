@@ -40,7 +40,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                       child: Container(
                         padding: const EdgeInsets.all(20),
                         width: double.infinity,
-                        color: Colors.black.withOpacity(.65),
+                      color: Colors.black.withOpacity(.1),
                         child: Padding(
                           padding: const EdgeInsets.only(
                               left: 20, right: 20, top: 20),
