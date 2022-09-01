@@ -54,6 +54,7 @@ class _TabletHomePageState extends State<TabletHomePage> {
                                   letterSpacing: 1,
                                   color: Colors.white,
                                   height: 1.3,
+                                  fontWeight: FontWeight.w900,
                                 ),
                               ).text.bold.make(),
                               20.heightBox,
@@ -129,12 +130,219 @@ class _TabletHomePageState extends State<TabletHomePage> {
             ),
             40.heightBox,
 
+            //PLAY NOW
+            Text(
+              "Play Now".toUpperCase(),
+              style: GoogleFonts.lato(
+                fontSize: height(context) * .028,
+                fontWeight: FontWeight.w900,
+                color: const Color(0xffA5a5a5),
+              ),
+            ),
+            24.heightBox,
+            Text(
+              "How to place Your bet in our IDs".toUpperCase(),
+              textAlign: TextAlign.center,
+              style: GoogleFonts.lato(
+                fontSize: height(context) * .044,
+                height: 1.3,
+                fontWeight: FontWeight.w900,
+                color: const Color(0xff383838),
+              ),
+            ),
+            40.heightBox,
+
+            Column(
+              children: [
+                //IMAGE
+                Container(
+                  height: height(context) * .6,
+                  width: double.infinity,
+                  color: Colors.green.withOpacity(.1),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 80, right: 80),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Column(
+                              children: [
+                                SizedBox(
+                                  height: 80,
+                                  width: 80,
+                                  child: Image.asset("assets/imgs/icon/1.png"),
+                                ),
+                                20.heightBox,
+                                Text(
+                                  "Casino".toUpperCase(),
+                                  textAlign: TextAlign.center,
+                                  style: GoogleFonts.lato(
+                                    fontSize: height(context) * .03,
+                                    height: 1.3,
+                                    fontWeight: FontWeight.w900,
+                                    color: const Color(0xff383838),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Column(
+                              children: [
+                                SizedBox(
+                                  height: 80,
+                                  width: 80,
+                                  child: Image.asset("assets/imgs/icon/2.png"),
+                                ),
+                                20.heightBox,
+                                Text(
+                                  "3 pati".toUpperCase(),
+                                  textAlign: TextAlign.center,
+                                  style: GoogleFonts.lato(
+                                    fontSize: height(context) * .03,
+                                    height: 1.3,
+                                    fontWeight: FontWeight.w900,
+                                    color: const Color(0xff383838),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Column(
+                              children: [
+                                SizedBox(
+                                  height: 80,
+                                  width: 80,
+                                  child: Image.asset("assets/imgs/icon/3.png"),
+                                ),
+                                20.heightBox,
+                                Text(
+                                  "Cricket".toUpperCase(),
+                                  textAlign: TextAlign.center,
+                                  style: GoogleFonts.lato(
+                                    fontSize: height(context) * .03,
+                                    height: 1.3,
+                                    fontWeight: FontWeight.w900,
+                                    color: const Color(0xff383838),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      40.heightBox,
+                      Padding(
+                        padding: const EdgeInsets.only(left: 80, right: 80),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            Column(
+                              children: [
+                                SizedBox(
+                                  height: 80,
+                                  width: 80,
+                                  child: Image.asset("assets/imgs/icon/4.png"),
+                                ),
+                                20.heightBox,
+                                Text(
+                                  "Tennis".toUpperCase(),
+                                  textAlign: TextAlign.center,
+                                  style: GoogleFonts.lato(
+                                    fontSize: height(context) * .03,
+                                    height: 1.3,
+                                    fontWeight: FontWeight.w900,
+                                    color: const Color(0xff383838),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Column(
+                              children: [
+                                SizedBox(
+                                  height: 80,
+                                  width: 80,
+                                  child: Image.asset("assets/imgs/icon/5.png"),
+                                ),
+                                20.heightBox,
+                                Text(
+                                  "Football".toUpperCase(),
+                                  textAlign: TextAlign.center,
+                                  style: GoogleFonts.lato(
+                                    fontSize: height(context) * .03,
+                                    height: 1.3,
+                                    fontWeight: FontWeight.w900,
+                                    color: const Color(0xff383838),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
+                //GREEN
+                Container(
+                  height: height(context) * .6,
+                  width: double.infinity,
+                  color: const Color(0xff01BD56),
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 100, right: 100),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          "With Our Step-By-Step Guide For Beginners, Get Started Playing. Start Learning Now.. 24/7 ACTIVE. \n\nWe Deal Only On WhatsApp",
+                          style: GoogleFonts.lato(
+                            fontSize: height(context) * .028,
+                            height: 1.6,
+                            color: Colors.white,
+                          ),
+                        ),
+                        40.heightBox,
+                        InkWell(
+                          onTap: () {
+                            return _launchWP3URL();
+                          },
+                          child: Container(
+                            alignment: Alignment.center,
+                            height: height(context) * .07,
+                            width: double.infinity,
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: const Color(0xff01BD56),
+                              ),
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Text(
+                              "9081924365",
+                              style: GoogleFonts.nunito(
+                                letterSpacing: 1,
+                                fontSize: height(context) * .028,
+                                color: const Color(0xff01BD56),
+                              ),
+                            ).text.semiBold.make(),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+
+            40.heightBox,
             //HELP
             Text(
               "Help".toUpperCase(),
               style: GoogleFonts.lato(
                 fontSize: height(context) * .028,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w900,
                 color: const Color(0xffA5a5a5),
               ),
             ),
@@ -145,7 +353,7 @@ class _TabletHomePageState extends State<TabletHomePage> {
               style: GoogleFonts.lato(
                 fontSize: height(context) * .044,
                 height: 1.3,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w900,
                 color: const Color(0xff383838),
               ),
             ),
@@ -257,7 +465,7 @@ class _TabletHomePageState extends State<TabletHomePage> {
                       "How to use".toUpperCase(),
                       style: GoogleFonts.lato(
                           fontSize: height(context) * .04,
-                          fontWeight: FontWeight.bold,
+                          fontWeight: FontWeight.w900,
                           color: Colors.white),
                     ),
                     40.heightBox,
@@ -317,7 +525,7 @@ class _TabletHomePageState extends State<TabletHomePage> {
                     "Follow us on".toUpperCase(),
                     style: GoogleFonts.nunito(
                       fontSize: height(context) * .06,
-                      fontWeight: FontWeight.bold,
+                      fontWeight: FontWeight.w900,
                       color: Colors.white,
                     ),
                   ),
