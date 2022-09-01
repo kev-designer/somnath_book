@@ -17,8 +17,9 @@ class _WebHomePageState extends State<WebHomePage> {
   final _fbUrl = 'https://www.facebook.com/profile.php?id=100085255865613';
   final _whatsappUrl1 = 'https://wa.me/+919714124365/';
   final _whatsappUrl2 = 'https://wa.me/+919714824365/';
-  final _whatsappUrl3 = 'https://wa.me/+919081924365/';
+  final _whatsappUrl5 = 'https://wa.me/+919081924365/';
   final _whatsappUrl4 = 'https://wa.me/+919129159191/';
+  final _whatsappUrl3 = 'https://wa.me/+919129159191/';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,7 +29,7 @@ class _WebHomePageState extends State<WebHomePage> {
             VStack(
               [
                 Container(
-                  height: 1000,
+                  height: 600,
                   width: double.infinity,
                   decoration: const BoxDecoration(
                     // color: Colors.white,
@@ -38,79 +39,108 @@ class _WebHomePageState extends State<WebHomePage> {
                     ),
                   ),
                   child: Container(
-                    height: 1000,
+                    height: 600,
                     width: double.infinity,
                     color: Colors.black.withOpacity(.65),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Expanded(
-                          child: Padding(
-                            padding: const EdgeInsets.only(left: 100),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  "BEST SAFE \nBOOK EVER",
-                                  style: GoogleFonts.lato(
-                                    fontSize: height(context) * .06,
-                                    letterSpacing: 1,
-                                    color: Colors.white,
-                                    height: 1.3,
-                                    fontWeight: FontWeight.w900,
-                                  ),
-                                ).text.bold.make(),
-                                20.heightBox,
-                                Text(
-                                  "For any Queries or New ID  Whats App us",
-                                  style: GoogleFonts.lato(
-                                    fontSize: height(context) * .024,
-                                    color: Colors.white,
-                                  ),
-                                ).text.medium.make(),
-                                40.heightBox,
-                                Row(
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Expanded(
+                              child: Padding(
+                                padding: const EdgeInsets.only(left: 100),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    InkWell(
-                                      onTap: () {
-                                        return _launchWP1URL();
-                                      },
-                                      child: Container(
-                                        alignment: Alignment.center,
-                                        height: height(context) * .06,
-                                        width: width(context) * .15,
-                                        decoration: BoxDecoration(
-                                          color: const Color(0xff207DFE),
-                                          borderRadius:
-                                              BorderRadius.circular(8),
-                                        ),
-                                        child: Text(
-                                          "9714124365",
-                                          style: GoogleFonts.nunito(
-                                            letterSpacing: 1,
-                                            fontSize: height(context) * .02,
-                                            color: Colors.white,
-                                          ),
-                                        ).text.semiBold.make(),
+                                    Text(
+                                      "BEST SAFE \nBOOK EVER",
+                                      style: GoogleFonts.lato(
+                                        fontSize: height(context) * .06,
+                                        letterSpacing: 1,
+                                        color: Colors.white,
+                                        height: 1.3,
+                                        fontWeight: FontWeight.w900,
                                       ),
+                                    ).text.bold.make(),
+                                    20.heightBox,
+                                    Text(
+                                      "For any Queries or New ID  Whats App us",
+                                      style: GoogleFonts.lato(
+                                        fontSize: height(context) * .024,
+                                        color: Colors.white,
+                                      ),
+                                    ).text.medium.make(),
+                                    40.heightBox,
+                                    Row(
+                                      children: [
+                                        InkWell(
+                                          onTap: () {
+                                            return _launchWP1URL();
+                                          },
+                                          child: Container(
+                                            alignment: Alignment.center,
+                                            height: height(context) * .06,
+                                            width: width(context) * .15,
+                                            decoration: BoxDecoration(
+                                              color: const Color(0xff207DFE),
+                                              borderRadius:
+                                                  BorderRadius.circular(8),
+                                            ),
+                                            child: Text(
+                                              "9714124365",
+                                              style: GoogleFonts.nunito(
+                                                letterSpacing: 1,
+                                                fontSize: height(context) * .02,
+                                                color: Colors.white,
+                                              ),
+                                            ).text.semiBold.make(),
+                                          ),
+                                        ),
+                                        24.widthBox,
+                                        InkWell(
+                                          onTap: () {
+                                            return _launchWP2URL();
+                                          },
+                                          child: Container(
+                                            alignment: Alignment.center,
+                                            height: height(context) * .06,
+                                            width: width(context) * .15,
+                                            decoration: BoxDecoration(
+                                              color: const Color(0xff01BD56),
+                                              borderRadius:
+                                                  BorderRadius.circular(8),
+                                            ),
+                                            child: Text(
+                                              "9714824365",
+                                              style: GoogleFonts.nunito(
+                                                letterSpacing: 1,
+                                                fontSize: height(context) * .02,
+                                                color: Colors.white,
+                                              ),
+                                            ).text.semiBold.make(),
+                                          ),
+                                        ),
+                                      ],
                                     ),
-                                    24.widthBox,
+                                    32.heightBox,
                                     InkWell(
                                       onTap: () {
-                                        return _launchWP2URL();
+                                        return _launchWP3URL();
                                       },
                                       child: Container(
                                         alignment: Alignment.center,
                                         height: height(context) * .06,
-                                        width: width(context) * .15,
+                                        width: width(context) * .32,
                                         decoration: BoxDecoration(
-                                          color: const Color(0xff01BD56),
+                                          color: Colors.red,
                                           borderRadius:
                                               BorderRadius.circular(8),
                                         ),
                                         child: Text(
-                                          "9714824365",
+                                          "Head Office Number -  9129159191",
                                           style: GoogleFonts.nunito(
                                             letterSpacing: 1,
                                             fontSize: height(context) * .02,
@@ -120,16 +150,16 @@ class _WebHomePageState extends State<WebHomePage> {
                                       ),
                                     ),
                                   ],
-                                )
-                              ],
+                                ),
+                              ),
                             ),
-                          ),
-                        ),
-                        Expanded(
-                          child: Image.asset(
-                            "assets/imgs/web/new.png",
-                            height: height(context) * .5,
-                          ),
+                            Expanded(
+                              child: Image.asset(
+                                "assets/imgs/web/new.png",
+                                height: height(context) * .5,
+                              ),
+                            ),
+                          ],
                         ),
                       ],
                     ),
@@ -340,7 +370,7 @@ class _WebHomePageState extends State<WebHomePage> {
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child: Text(
-                                "9081924365",
+                                "9129159191",
                                 style: GoogleFonts.nunito(
                                   letterSpacing: 1,
                                   fontSize: height(context) * .02,
@@ -422,7 +452,7 @@ class _WebHomePageState extends State<WebHomePage> {
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child: Text(
-                                "9081924365",
+                                "9129159191",
                                 style: GoogleFonts.nunito(
                                   letterSpacing: 1,
                                   fontSize: height(context) * .02,

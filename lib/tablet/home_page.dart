@@ -16,8 +16,9 @@ class _TabletHomePageState extends State<TabletHomePage> {
   final _fbUrl = 'https://www.facebook.com/profile.php?id=100085255865613';
   final _whatsappUrl1 = 'https://wa.me/+919714124365/';
   final _whatsappUrl2 = 'https://wa.me/+919714824365/';
-  final _whatsappUrl3 = 'https://wa.me/+919081924365/';
+  final _whatsappUrl5 = 'https://wa.me/+919081924365/';
   final _whatsappUrl4 = 'https://wa.me/+919129159191/';
+  final _whatsappUrl3 = 'https://wa.me/+919129159191/';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,7 +44,7 @@ class _TabletHomePageState extends State<TabletHomePage> {
                         color: Colors.black.withOpacity(.65),
                         child: Padding(
                           padding: const EdgeInsets.only(
-                              left: 100, right: 100, top: 80),
+                              left: 100, right: 100, top: 30),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -65,7 +66,7 @@ class _TabletHomePageState extends State<TabletHomePage> {
                                   color: Colors.white,
                                 ),
                               ).text.medium.make(),
-                              50.heightBox,
+                              32.heightBox,
                               InkWell(
                                 onTap: () {
                                   return _launchWP1URL();
@@ -88,7 +89,7 @@ class _TabletHomePageState extends State<TabletHomePage> {
                                   ).text.semiBold.make(),
                                 ),
                               ),
-                              50.heightBox,
+                              40.heightBox,
                               InkWell(
                                 onTap: () {
                                   return _launchWP2URL();
@@ -103,6 +104,29 @@ class _TabletHomePageState extends State<TabletHomePage> {
                                   ),
                                   child: Text(
                                     "9714824365",
+                                    style: GoogleFonts.nunito(
+                                      letterSpacing: 1,
+                                      fontSize: height(context) * .028,
+                                      color: Colors.white,
+                                    ),
+                                  ).text.semiBold.make(),
+                                ),
+                              ),
+                              40.heightBox,
+                              InkWell(
+                                onTap: () {
+                                  return _launchWP3URL();
+                                },
+                                child: Container(
+                                  alignment: Alignment.center,
+                                  height: height(context) * .07,
+                                  width: double.infinity,
+                                  decoration: BoxDecoration(
+                                    color: Colors.red,
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                  child: Text(
+                                    "Head Office Number -  9129159191",
                                     style: GoogleFonts.nunito(
                                       letterSpacing: 1,
                                       fontSize: height(context) * .028,
@@ -320,7 +344,7 @@ class _TabletHomePageState extends State<TabletHomePage> {
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: Text(
-                              "9081924365",
+                              "9129159191",
                               style: GoogleFonts.nunito(
                                 letterSpacing: 1,
                                 fontSize: height(context) * .028,
@@ -397,7 +421,7 @@ class _TabletHomePageState extends State<TabletHomePage> {
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: Text(
-                              "9081924365",
+                              "9129159191",
                               style: GoogleFonts.nunito(
                                 letterSpacing: 1,
                                 fontSize: height(context) * .028,
