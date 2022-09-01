@@ -34,7 +34,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                       decoration: const BoxDecoration(
                         // color: Colors.white,
                         image: DecorationImage(
-                            image: AssetImage("assets/imgs/web/bg1.png"),
+                            image: AssetImage("assets/imgs/web/bg1.jpeg"),
                             fit: BoxFit.cover),
                       ),
                       child: Container(
