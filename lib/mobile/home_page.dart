@@ -210,7 +210,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                   decoration: const BoxDecoration(
                     // color: Colors.white,
                     image: DecorationImage(
-                        image: AssetImage("assets/imgs/web/bg2.jpg"),
+                        image: AssetImage("assets/imgs/web/bg2.jpeg"),
                         fit: BoxFit.cover),
                   ),
                   child: Container(

@@ -138,6 +138,112 @@ class _WebHomePageState extends State<WebHomePage> {
               crossAlignment: CrossAxisAlignment.center,
             ),
             40.heightBox,
+            //PLAY NOW
+            Text(
+              "Play Now".toUpperCase(),
+              style: GoogleFonts.lato(
+                fontSize: height(context) * .024,
+                fontWeight: FontWeight.bold,
+                color: const Color(0xffA5a5a5),
+              ),
+            ),
+            24.heightBox,
+            Text(
+              "How to place Your bet in our IDs".toUpperCase(),
+              textAlign: TextAlign.center,
+              style: GoogleFonts.lato(
+                fontSize: height(context) * .05,
+                height: 1.3,
+                fontWeight: FontWeight.bold,
+                color: const Color(0xff383838),
+              ),
+            ),
+            40.heightBox,
+
+            Row(
+              children: [
+                //IMAGE
+                Expanded(
+                  child: Container(
+                    height: height(context) * .5,
+                    width: double.infinity,
+                    color: Colors.white,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            SizedBox(
+                              height: 50,
+                              width: 50,
+                              child: Image.asset("assets/imgs/icon/1.png"),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                //GREEN
+                Expanded(
+                  child: Container(
+                    height: height(context) * .5,
+                    width: double.infinity,
+                    color: const Color(0xff01BD56),
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 100, top: 80),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            width: 450,
+                            child: Text(
+                              "With Our Step-By-Step Guide For Beginners, Get Started Playing. Start Learning Now.. 24/7 ACTIVE. \n\nWe Deal Only On WhatsApp",
+                              style: GoogleFonts.lato(
+                                fontSize: height(context) * .024,
+                                height: 1.3,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                          40.heightBox,
+                          InkWell(
+                            onTap: () {
+                              return _launchWP3URL();
+                            },
+                            child: Container(
+                              alignment: Alignment.center,
+                              height: height(context) * .06,
+                              width: width(context) * .16,
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: const Color(0xff01BD56),
+                                ),
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              child: Text(
+                                "9081924365",
+                                style: GoogleFonts.nunito(
+                                  letterSpacing: 1,
+                                  fontSize: height(context) * .02,
+                                  color: const Color(0xff01BD56),
+                                ),
+                              ).text.semiBold.make(),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            40.heightBox,
+
             //HELP
             Text(
               "Help".toUpperCase(),
@@ -223,7 +329,7 @@ class _WebHomePageState extends State<WebHomePage> {
                     decoration: const BoxDecoration(
                       // color: Colors.white,
                       image: DecorationImage(
-                          image: AssetImage("assets/imgs/web/bg2.jpg"),
+                          image: AssetImage("assets/imgs/web/bg2.jpeg"),
                           fit: BoxFit.cover),
                     ),
                     child: Container(
