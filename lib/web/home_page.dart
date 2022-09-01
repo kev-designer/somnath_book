@@ -75,6 +75,30 @@ class _WebHomePageState extends State<WebHomePage> {
                                       ),
                                     ).text.medium.make(),
                                     40.heightBox,
+                                    InkWell(
+                                      onTap: () {
+                                        return _launchWP3URL();
+                                      },
+                                      child: Container(
+                                        alignment: Alignment.center,
+                                        height: height(context) * .06,
+                                        width: width(context) * .32,
+                                        decoration: BoxDecoration(
+                                          color: Colors.red,
+                                          borderRadius:
+                                              BorderRadius.circular(8),
+                                        ),
+                                        child: Text(
+                                          "Head Office Number 9129159191",
+                                          style: GoogleFonts.nunito(
+                                            letterSpacing: 1,
+                                            fontSize: height(context) * .02,
+                                            color: Colors.white,
+                                          ),
+                                        ).text.semiBold.make(),
+                                      ),
+                                    ),
+                                    32.heightBox,
                                     Row(
                                       children: [
                                         InkWell(
@@ -125,30 +149,6 @@ class _WebHomePageState extends State<WebHomePage> {
                                           ),
                                         ),
                                       ],
-                                    ),
-                                    32.heightBox,
-                                    InkWell(
-                                      onTap: () {
-                                        return _launchWP3URL();
-                                      },
-                                      child: Container(
-                                        alignment: Alignment.center,
-                                        height: height(context) * .06,
-                                        width: width(context) * .32,
-                                        decoration: BoxDecoration(
-                                          color: Colors.red,
-                                          borderRadius:
-                                              BorderRadius.circular(8),
-                                        ),
-                                        child: Text(
-                                          "Head Office Number 9129159191",
-                                          style: GoogleFonts.nunito(
-                                            letterSpacing: 1,
-                                            fontSize: height(context) * .02,
-                                            color: Colors.white,
-                                          ),
-                                        ).text.semiBold.make(),
-                                      ),
                                     ),
                                   ],
                                 ),
