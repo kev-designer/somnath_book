@@ -126,7 +126,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                                     borderRadius: BorderRadius.circular(8),
                                   ),
                                   child: Text(
-                                    "Head Office Number -  9129159191",
+                                    "Head Office Number 9129159191",
                                     style: GoogleFonts.nunito(
                                       letterSpacing: 1,
                                       fontSize: height(context) * .026,

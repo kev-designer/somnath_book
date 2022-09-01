@@ -50,7 +50,8 @@ class _WebHomePageState extends State<WebHomePage> {
                           children: [
                             Expanded(
                               child: Padding(
-                                padding: const EdgeInsets.only(left: 100),
+                                padding:
+                                    const EdgeInsets.only(top: 100, left: 100),
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -140,7 +141,7 @@ class _WebHomePageState extends State<WebHomePage> {
                                               BorderRadius.circular(8),
                                         ),
                                         child: Text(
-                                          "Head Office Number -  9129159191",
+                                          "Head Office Number 9129159191",
                                           style: GoogleFonts.nunito(
                                             letterSpacing: 1,
                                             fontSize: height(context) * .02,
@@ -154,9 +155,12 @@ class _WebHomePageState extends State<WebHomePage> {
                               ),
                             ),
                             Expanded(
-                              child: Image.asset(
-                                "assets/imgs/web/new.png",
-                                height: height(context) * .5,
+                              child: Padding(
+                                padding: const EdgeInsets.only(top: 100),
+                                child: Image.asset(
+                                  "assets/imgs/web/new.png",
+                                  height: height(context) * .5,
+                                ),
                               ),
                             ),
                           ],
