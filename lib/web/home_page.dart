@@ -15,11 +15,11 @@ class WebHomePage extends StatefulWidget {
 class _WebHomePageState extends State<WebHomePage> {
   final _instaUrl = 'https://www.instagram.com/somnath_online_book/';
   final _fbUrl = 'https://www.facebook.com/profile.php?id=100085255865613';
-  final _whatsappUrl1 = 'https://wa.me/+919714124365/';
-  final _whatsappUrl2 = 'https://wa.me/+919714824365/';
-  final _whatsappUrl5 = 'https://wa.me/+919081924365/';
-  final _whatsappUrl4 = 'https://wa.me/+919129159191/';
-  final _whatsappUrl3 = 'https://wa.me/+919129159191/';
+  final _whatsappUrl1 = 'https://wa.me/+918141444444/';
+  final _whatsappUrl2 = 'https://wa.me/+918141444444/';
+  final _whatsappUrl5 = 'https://wa.me/+918141444444/';
+  final _whatsappUrl4 = 'https://wa.me/+918141444444/';
+  final _whatsappUrl3 = 'https://wa.me/+918141444444/';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -89,7 +89,7 @@ class _WebHomePageState extends State<WebHomePage> {
                                               BorderRadius.circular(8),
                                         ),
                                         child: Text(
-                                          "Head Office Number 9129159191",
+                                          "Head Office Number 8141444444",
                                           style: GoogleFonts.nunito(
                                             letterSpacing: 1,
                                             fontSize: height(context) * .02,
@@ -99,57 +99,58 @@ class _WebHomePageState extends State<WebHomePage> {
                                       ),
                                     ),
                                     32.heightBox,
-                                    Row(
-                                      children: [
-                                        InkWell(
-                                          onTap: () {
-                                            return _launchWP1URL();
-                                          },
-                                          child: Container(
-                                            alignment: Alignment.center,
-                                            height: height(context) * .06,
-                                            width: width(context) * .15,
-                                            decoration: BoxDecoration(
-                                              color: const Color(0xff207DFE),
-                                              borderRadius:
-                                                  BorderRadius.circular(8),
-                                            ),
-                                            child: Text(
-                                              "9714124365",
-                                              style: GoogleFonts.nunito(
-                                                letterSpacing: 1,
-                                                fontSize: height(context) * .02,
-                                                color: Colors.white,
-                                              ),
-                                            ).text.semiBold.make(),
-                                          ),
-                                        ),
-                                        24.widthBox,
-                                        InkWell(
-                                          onTap: () {
-                                            return _launchWP2URL();
-                                          },
-                                          child: Container(
-                                            alignment: Alignment.center,
-                                            height: height(context) * .06,
-                                            width: width(context) * .15,
-                                            decoration: BoxDecoration(
-                                              color: const Color(0xff01BD56),
-                                              borderRadius:
-                                                  BorderRadius.circular(8),
-                                            ),
-                                            child: Text(
-                                              "9714824365",
-                                              style: GoogleFonts.nunito(
-                                                letterSpacing: 1,
-                                                fontSize: height(context) * .02,
-                                                color: Colors.white,
-                                              ),
-                                            ).text.semiBold.make(),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
+                                    // Row(
+                                    //   children: [
+                                    //     InkWell(
+                                    //       onTap: () {
+                                    //         return _launchWP1URL();
+                                    //       },
+                                    //       child: Container(
+                                    //         alignment: Alignment.center,
+                                    //         height: height(context) * .06,
+                                    //         width: width(context) * .15,
+                                    //         decoration: BoxDecoration(
+                                    //           color: const Color(0xff207DFE),
+                                    //           borderRadius:
+                                    //               BorderRadius.circular(8),
+                                    //         ),
+                                    //         child: Text(
+                                    //           "8141444444",
+                                    //           style: GoogleFonts.nunito(
+                                    //             letterSpacing: 1,
+                                    //             fontSize: height(context) * .02,
+                                    //             color: Colors.white,
+                                    //           ),
+                                    //         ).text.semiBold.make(),
+                                    //       ),
+                                    //     ),
+                                    //     24.widthBox,
+                                    //     InkWell(
+                                    //       onTap: () {
+                                    //         return _launchWP2URL();
+                                    //       },
+                                    //       child: Container(
+                                    //         alignment: Alignment.center,
+                                    //         height: height(context) * .06,
+                                    //         width: width(context) * .15,
+                                    //         decoration: BoxDecoration(
+                                    //           color: const Color(0xff01BD56),
+                                    //           borderRadius:
+                                    //               BorderRadius.circular(8),
+                                    //         ),
+                                    //         child: Text(
+                                    //           "8141444444",
+                                    //           style: GoogleFonts.nunito(
+                                    //             letterSpacing: 1,
+                                    //             fontSize: height(context) * .02,
+                                    //             color: Colors.white,
+                                    //           ),
+                                    //         ).text.semiBold.make(),
+                                    //       ),
+                                    //     ),
+                                    //   ],
+                                    // ),
+                         
                                   ],
                                 ),
                               ),
@@ -374,7 +375,7 @@ class _WebHomePageState extends State<WebHomePage> {
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child: Text(
-                                "9129159191",
+                                "8141444444",
                                 style: GoogleFonts.nunito(
                                   letterSpacing: 1,
                                   fontSize: height(context) * .02,
@@ -456,7 +457,7 @@ class _WebHomePageState extends State<WebHomePage> {
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child: Text(
-                                "9129159191",
+                                "8141444444",
                                 style: GoogleFonts.nunito(
                                   letterSpacing: 1,
                                   fontSize: height(context) * .02,
@@ -555,7 +556,7 @@ class _WebHomePageState extends State<WebHomePage> {
                           borderRadius: BorderRadius.circular(8),
                         ),
                         child: Text(
-                          "9129159191",
+                          "8141444444",
                           style: GoogleFonts.nunito(
                             letterSpacing: 1,
                             fontSize: height(context) * .02,

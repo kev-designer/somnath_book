@@ -14,11 +14,11 @@ class TabletHomePage extends StatefulWidget {
 class _TabletHomePageState extends State<TabletHomePage> {
   final _instaUrl = 'https://www.instagram.com/somnath_online_book/';
   final _fbUrl = 'https://www.facebook.com/profile.php?id=100085255865613';
-  final _whatsappUrl1 = 'https://wa.me/+919714124365/';
-  final _whatsappUrl2 = 'https://wa.me/+919714824365/';
-  final _whatsappUrl5 = 'https://wa.me/+919081924365/';
-  final _whatsappUrl4 = 'https://wa.me/+919129159191/';
-  final _whatsappUrl3 = 'https://wa.me/+919129159191/';
+  final _whatsappUrl1 = 'https://wa.me/+918141444444/';
+  final _whatsappUrl2 = 'https://wa.me/+918141444444/';
+  final _whatsappUrl5 = 'https://wa.me/+918141444444/';
+  final _whatsappUrl4 = 'https://wa.me/+918141444444/';
+  final _whatsappUrl3 = 'https://wa.me/+918141444444/';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -80,7 +80,7 @@ class _TabletHomePageState extends State<TabletHomePage> {
                                     borderRadius: BorderRadius.circular(8),
                                   ),
                                   child: Text(
-                                    "H/O 9129159191",
+                                    "H/O 8141444444",
                                     style: GoogleFonts.nunito(
                                       letterSpacing: 1,
                                       fontSize: height(context) * .028,
@@ -90,51 +90,52 @@ class _TabletHomePageState extends State<TabletHomePage> {
                                 ),
                               ),
                               40.heightBox,
-                              InkWell(
-                                onTap: () {
-                                  return _launchWP1URL();
-                                },
-                                child: Container(
-                                  alignment: Alignment.center,
-                                  height: height(context) * .07,
-                                  width: double.infinity,
-                                  decoration: BoxDecoration(
-                                    color: const Color(0xff207DFE),
-                                    borderRadius: BorderRadius.circular(8),
-                                  ),
-                                  child: Text(
-                                    "9714124365",
-                                    style: GoogleFonts.nunito(
-                                      letterSpacing: 1,
-                                      fontSize: height(context) * .028,
-                                      color: Colors.white,
-                                    ),
-                                  ).text.semiBold.make(),
-                                ),
-                              ),
-                              40.heightBox,
-                              InkWell(
-                                onTap: () {
-                                  return _launchWP2URL();
-                                },
-                                child: Container(
-                                  alignment: Alignment.center,
-                                  height: height(context) * .07,
-                                  width: double.infinity,
-                                  decoration: BoxDecoration(
-                                    color: const Color(0xff01BD56),
-                                    borderRadius: BorderRadius.circular(8),
-                                  ),
-                                  child: Text(
-                                    "9714824365",
-                                    style: GoogleFonts.nunito(
-                                      letterSpacing: 1,
-                                      fontSize: height(context) * .028,
-                                      color: Colors.white,
-                                    ),
-                                  ).text.semiBold.make(),
-                                ),
-                              ),
+                              // InkWell(
+                              //   onTap: () {
+                              //     return _launchWP1URL();
+                              //   },
+                              //   child: Container(
+                              //     alignment: Alignment.center,
+                              //     height: height(context) * .07,
+                              //     width: double.infinity,
+                              //     decoration: BoxDecoration(
+                              //       color: const Color(0xff207DFE),
+                              //       borderRadius: BorderRadius.circular(8),
+                              //     ),
+                              //     child: Text(
+                              //       "8141444444",
+                              //       style: GoogleFonts.nunito(
+                              //         letterSpacing: 1,
+                              //         fontSize: height(context) * .028,
+                              //         color: Colors.white,
+                              //       ),
+                              //     ).text.semiBold.make(),
+                              //   ),
+                              // ),
+                              // 40.heightBox,
+                              // InkWell(
+                              //   onTap: () {
+                              //     return _launchWP2URL();
+                              //   },
+                              //   child: Container(
+                              //     alignment: Alignment.center,
+                              //     height: height(context) * .07,
+                              //     width: double.infinity,
+                              //     decoration: BoxDecoration(
+                              //       color: const Color(0xff01BD56),
+                              //       borderRadius: BorderRadius.circular(8),
+                              //     ),
+                              //     child: Text(
+                              //       "8141444444",
+                              //       style: GoogleFonts.nunito(
+                              //         letterSpacing: 1,
+                              //         fontSize: height(context) * .028,
+                              //         color: Colors.white,
+                              //       ),
+                              //     ).text.semiBold.make(),
+                              //   ),
+                              // ),
+
                               20.heightBox,
                               Center(
                                 child: Image.asset(
@@ -344,7 +345,7 @@ class _TabletHomePageState extends State<TabletHomePage> {
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: Text(
-                              "9129159191",
+                              "8141444444",
                               style: GoogleFonts.nunito(
                                 letterSpacing: 1,
                                 fontSize: height(context) * .028,
@@ -421,7 +422,7 @@ class _TabletHomePageState extends State<TabletHomePage> {
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: Text(
-                              "9129159191",
+                              "8141444444",
                               style: GoogleFonts.nunito(
                                 letterSpacing: 1,
                                 fontSize: height(context) * .028,
@@ -522,7 +523,7 @@ class _TabletHomePageState extends State<TabletHomePage> {
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: Text(
-                            "9129159191",
+                            "8141444444",
                             style: GoogleFonts.nunito(
                               letterSpacing: 1,
                               fontSize: height(context) * .028,
