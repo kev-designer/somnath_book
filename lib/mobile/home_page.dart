@@ -97,7 +97,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                                         "Terms & Condition Applied",
                                         style: GoogleFonts.nunito(
                                           letterSpacing: 1,
-                                          fontSize: height(context) * .02,
+                                          fontSize: height(context) * .026,
                                           color: Colors.white,
                                         ),
                                       ).text.semiBold.make(),
@@ -125,7 +125,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                                         "H/O 8141444444",
                                         style: GoogleFonts.nunito(
                                           letterSpacing: 1,
-                                          fontSize: height(context) * .02,
+                                          fontSize: height(context) * .026,
                                           color: Colors.white,
                                         ),
                                       ).text.semiBold.make(),
@@ -744,23 +744,23 @@ Widget buildStartPopDialog(
               Image.asset(
                 svgUrl,
                 fit: BoxFit.cover,
-                height: height(context) * .04,
+                height: height(context) * .054,
               ),
               20.heightBox,
               Text(
                 headingText,
-                style: GoogleFonts.nunito(
-                  fontSize: height(context) * .02,
-                  fontWeight: FontWeight.bold,
+                style: GoogleFonts.lato(
+                  fontSize: height(context) * .024,
+                  fontWeight: FontWeight.w600,
                   color: Colors.black,
                 ),
               ),
               16.heightBox,
               Text(
                 descriptionText,
-                style: GoogleFonts.nunito(
+                style: GoogleFonts.lato(
                   fontSize: height(context) * .02,
-                  fontWeight: FontWeight.w600,
+                  fontWeight: FontWeight.w500,
                   color: Colors.grey,
                 ),
                 textAlign: TextAlign.start,
@@ -783,9 +783,9 @@ Widget buildStartPopDialog(
                       ),
                       child: Text(
                         filledBtnText,
-                        style: GoogleFonts.nunito(
+                        style: GoogleFonts.lato(
                           letterSpacing: 1,
-                          fontSize: height(context) * .02,
+                          fontSize: height(context) * .026,
                           color: Colors.white,
                         ),
                       ).text.semiBold.make(),
